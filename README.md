@@ -2,6 +2,16 @@
 
 Create a [FLAME](http://flame.is.tue.mpg.de) texture model from the Basel Face Model vertex color model.
 
+##### About FLAME
+
+FLAME is a lightweight and expressive generic head model learned from over 33,000 of accurately aligned 3D scans. Public FLAME related repositories:
+* [TF_FLAME](https://github.com/TimoBolkart/TF_FLAME)
+* [flame-fitting](https://github.com/Rubikplayer/flame-fitting)
+* [Photometric FLAME Fitting](https://github.com/HavenFeng/photometric_optimization)
+* [FLAME_PyTorch](https://github.com/soubhiksanyal/FLAME_PyTorch)
+* [RingNet](https://github.com/soubhiksanyal/RingNet)
+* [VOCA](https://github.com/TimoBolkart/voca)
+
 #### Setup
 
 Install pip and virtualenv
