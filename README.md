@@ -1,5 +1,6 @@
 ## Convert BFM vertex colors to FLAME texture
 
+Create a [FLAME](http://flame.is.tue.mpg.de) texture model from the Basel Face Model vertex color model.
 
 #### Setup
 
