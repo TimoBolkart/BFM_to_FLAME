@@ -36,7 +36,7 @@ pip install opencv-python==4.4.0.46
 #### Data
 
 Download BFM 2017 (i.e. 'model2017-1_bfm_nomouth.h5') from [here](https://faces.dmi.unibas.ch/bfm/bfm2017.html) and place it in the model folder.
-Download inpainting masks from [here]() and place it in the data folder.
+Download inpainting masks from [here](http://files.is.tue.mpg.de/tbolkart/FLAME/mask_inpainting.npz) and place it in the data folder.
 
 #### Run code
 
