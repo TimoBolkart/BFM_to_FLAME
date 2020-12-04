@@ -23,17 +23,17 @@ def load_BFM_2017(fname):
     '''
 
     with h5py.File(fname, 'r') as f:
-        shape_mean = f['shape']['model']['mean'].value
-        shape_pcaBasis = f['shape']['model']['pcaBasis'].value
-        shape_pcaVariance = f['shape']['model']['pcaVariance'].value
+        shape_mean = f['shape']['model']['mean'][:]
+        shape_pcaBasis = f['shape']['model']['pcaBasis'][:]
+        shape_pcaVariance = f['shape']['model']['pcaVariance'][:]
 
-        expression_mean = f['expression']['model']['mean'].value
-        expression_pcaBasis = f['expression']['model']['pcaBasis'].value
-        expression_pcaVariance = f['expression']['model']['pcaVariance'].value
+        expression_mean = f['expression']['model']['mean'][:]
+        expression_pcaBasis = f['expression']['model']['pcaBasis'][:]
+        expression_pcaVariance = f['expression']['model']['pcaVariance'][:]
 
-        color_mean = f['color']['model']['mean'].value
-        color_pcaBasis = f['color']['model']['pcaBasis'].value
-        color_pcaVariance = f['color']['model']['pcaVariance'].value
+        color_mean = f['color']['model']['mean'][:]
+        color_pcaBasis = f['color']['model']['pcaBasis'][:]
+        color_pcaVariance = f['color']['model']['pcaVariance'][:]
 
         shape_coeffs = ch.zeros(shape_pcaBasis.shape[1])
         exp_coeffs = ch.zeros(expression_pcaBasis.shape[1])
@@ -128,7 +128,7 @@ def transfer_BFM_textures_to_FLAME_uv():
         print('Cached data not found')
         return
 
-    cached_data = np.load('./data/cached_data.npy', allow_pickle=True).item()
+    cached_data = np.load('./data/cached_data.npy', allow_pickle=True, encoding='latin1').item()
 
     w, h = cached_data['w'], cached_data['h']
     x_coords, y_coords, ids = cached_data['x_coords'], cached_data['y_coords'], cached_data['ids']
