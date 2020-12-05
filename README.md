@@ -2,6 +2,10 @@
 
 Create a [FLAME](http://flame.is.tue.mpg.de) texture model from the Basel Face Model vertex color model.
 
+<p align="center"> 
+<img src="gifs/BFM_to_FLAME.gif">
+</p>
+
 ##### About FLAME
 
 FLAME is a lightweight and expressive generic head model learned from over 33,000 of accurately aligned 3D scans. Public FLAME related repositories:
