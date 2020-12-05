@@ -162,7 +162,7 @@ def transfer_BFM_textures_to_FLAME_uv():
     if inpaint:
         inpainted_mean = cv2.resize(inpainted_mask['MU'].reshape((low_res, low_res, 3)), (h, w))
         mean_img[y_coords[mask_ids].astype(int), x_coords[mask_ids].astype(int), :3] = inpainted_mean[y_coords[mask_ids].astype(int), x_coords[mask_ids].astype(int), :3]
-    mean_img[y_coords[ids].astype(int), x_coords[ids].astype(int), :3] = mean_point_color[:,::-1]
+    mean_img[y_coords[ids].astype(int), x_coords[ids].astype(int), ::-1] = mean_point_color
     mean = np.reshape(mean_img, [-1,])
 
     basis = np.zeros((h*w*3, num_color_components))
@@ -180,7 +180,7 @@ def transfer_BFM_textures_to_FLAME_uv():
         if inpaint:
             inpainted_PC = cv2.resize(inpainted_mask['PC'][:,i].reshape((low_res, low_res, 3)), (h, w))
             img[y_coords[mask_ids].astype(int), x_coords[mask_ids].astype(int), :3] = inpainted_PC[y_coords[mask_ids].astype(int), x_coords[mask_ids].astype(int), :3]
-        img[y_coords[ids].astype(int), x_coords[ids].astype(int), :3] = point_color[:,::-1]-mean_point_color
+        img[y_coords[ids].astype(int), x_coords[ids].astype(int), ::-1] = point_color-mean_point_color
         basis[:, i] = np.reshape(img, [-1,])
 
     out_folder = './output'
