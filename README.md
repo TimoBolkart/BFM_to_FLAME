@@ -76,7 +76,24 @@ python mesh_convert.py
 ```
 outputs a FLAME mesh for a specified BFM mesh. The demo supports meshes in 'BFM 2017', 'BFM 2009', or 'cropped BFM 2009' (i.e. as used by [3DDFA](http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/3DDFA/main.htm)) topology.
 
+## Citing
+
+When using this code, the generated texture space, or FLAME meshes in a scientific publication, please cite 
+```
+@article{FLAME:SiggraphAsia2017,
+  title = {Learning a model of facial shape and expression from {4D} scans},
+  author = {Li, Tianye and Bolkart, Timo and Black, Michael. J. and Li, Hao and Romero, Javier},
+  journal = {ACM Transactions on Graphics, (Proc. SIGGRAPH Asia)},
+  volume = {36},
+  number = {6},
+  year = {2017},
+  url = {https://doi.org/10.1145/3130800.3130813}
+}
+```
+
+When using the converted texture space, please further follow the license agreement of the BFM model as specified [here](https://faces.dmi.unibas.ch/bfm/bfm2017.html). 
+
+
 #### Acknowledgement
 
-We thank the authors of the BFM 2017 model for making the model publicly available. Please follow the license agreement of the BFM model when using the converted texture model.
-
+We thank the authors of the BFM 2017 model for making the model publicly available. 
