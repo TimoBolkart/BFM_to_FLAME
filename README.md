@@ -5,7 +5,7 @@ This repository demonstrates
 2) how to convert a BFM mesh to a FLAME mesh.
 
 <p align="center"> 
-<img src="gifs/BFM_to_FLAME_col.gif">
+<img src="gifs/BFM_to_FLAME_tex.gif">
 </p>
 
 <p align="center"> 
