@@ -12,7 +12,7 @@ This repository demonstrates
 <img src="gifs/BFM_to_FLAME_mesh.gif">
 </p>
 
-##### About FLAME
+### About FLAME
 
 FLAME is a lightweight and expressive generic head model learned from over 33,000 of accurately aligned 3D scans. Public FLAME related repositories:
 * [TF_FLAME](https://github.com/TimoBolkart/TF_FLAME)
@@ -22,7 +22,7 @@ FLAME is a lightweight and expressive generic head model learned from over 33,00
 * [RingNet](https://github.com/soubhiksanyal/RingNet)
 * [VOCA](https://github.com/TimoBolkart/voca)
 
-#### Setup
+### Setup
 
 Install pip and virtualenv
 ```
@@ -54,7 +54,7 @@ pip install chumpy==0.70
 pip install opencv-python==4.4.0.46
 ```
 
-#### Create texture model
+### Create texture model
 
 Download BFM 2017 (i.e. 'model2017-1_bfm_nomouth.h5') from [here](https://faces.dmi.unibas.ch/bfm/bfm2017.html) and place it in the model folder.
 Download inpainting masks from [here](http://files.is.tue.mpg.de/tbolkart/FLAME/mask_inpainting.npz) and place it in the data folder.
@@ -65,7 +65,7 @@ python col_to_tex.py
 ```
 outputs a 'FLAME_albedo_from_BFM.npz' in the output folder. This file can be used  with several FLAME-based repositories like [TF_FLAME](https://github.com/TimoBolkart/TF_FLAME) or [FLAME photometric optimization](https://github.com/HavenFeng/photometric_optimization).
 
-#### Convert meshes
+### Convert meshes
 
 Install mesh processing libraries from [MPI-IS/mesh](https://github.com/MPI-IS/mesh) within the virtual environment.
 Download FLAME from [here](https://flame.is.tue.mpg.de) and place it in the model folder.
@@ -76,7 +76,7 @@ python mesh_convert.py
 ```
 outputs a FLAME mesh for a specified BFM mesh. The demo supports meshes in 'BFM 2017', 'BFM 2009', or 'cropped BFM 2009' (i.e. as used by [3DDFA](http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/3DDFA/main.htm)) topology.
 
-## Citing
+### Citing
 
 When using this code, the generated texture space, or FLAME meshes in a scientific publication, please cite 
 ```
@@ -93,7 +93,6 @@ When using this code, the generated texture space, or FLAME meshes in a scientif
 
 When using the converted texture space, please further follow the license agreement of the BFM model as specified [here](https://faces.dmi.unibas.ch/bfm/bfm2017.html). 
 
-
-#### Acknowledgement
+### Acknowledgement
 
 We thank the authors of the BFM 2017 model for making the model publicly available. 
