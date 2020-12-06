@@ -32,7 +32,7 @@ Set up and activate virtual environment:
 ```
 $ mkdir <your_home_dir>/.virtualenvs
 $ python3 -m venv <your_home_dir>/.virtualenvs/BFM_to_FLAME
-$ source <your_home_dir>/BFM_to_FLAME/bin/activate
+$ source <your_home_dir>/.virtualenvs/BFM_to_FLAME/bin/activate
 ```
 
 Make sure your pip version is up-to-date:
