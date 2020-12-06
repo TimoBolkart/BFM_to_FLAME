@@ -1,7 +1,7 @@
 ## Convert from Basel Face Model (BFM) to FLAME
 
 This repository demonstrates 
-1) how to create a [FLAME](http://flame.is.tue.mpg.de) texture model from the Basel Face Model (BFM) vertex color space, and 
+1) how to create a [FLAME](http://flame.is.tue.mpg.de) texture model from the BFM vertex color space, and 
 2) how to convert a BFM mesh to a FLAME mesh.
 
 <p align="center"> 
