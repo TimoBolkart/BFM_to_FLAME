@@ -1,9 +1,15 @@
 ## Convert BFM vertex colors to FLAME texture
 
-Create a [FLAME](http://flame.is.tue.mpg.de) texture model from the Basel Face Model vertex color model.
+This repository demonstrates 
+1) how to create a [FLAME](http://flame.is.tue.mpg.de) texture model from the Basel Face Model (BFM) vertex color space, and 
+2) how to convert a BFM mesh to a FLAME mesh.
 
 <p align="center"> 
-<img src="gifs/BFM_to_FLAME.gif">
+<img src="gifs/BFM_to_FLAME_col.gif">
+</p>
+
+<p align="center"> 
+<img src="gifs/BFM_to_FLAME_mesh.gif">
 </p>
 
 ##### About FLAME
@@ -48,18 +54,27 @@ pip install chumpy==0.70
 pip install opencv-python==4.4.0.46
 ```
 
-#### Data
+#### Create texture model
 
 Download BFM 2017 (i.e. 'model2017-1_bfm_nomouth.h5') from [here](https://faces.dmi.unibas.ch/bfm/bfm2017.html) and place it in the model folder.
 Download inpainting masks from [here](http://files.is.tue.mpg.de/tbolkart/FLAME/mask_inpainting.npz) and place it in the data folder.
 
-#### Run code
-
-Successfully running
+Running
 ```
 python col_to_tex.py
 ```
 outputs a 'FLAME_albedo_from_BFM.npz' in the output folder. This file can be used  with several FLAME-based repositories like [TF_FLAME](https://github.com/TimoBolkart/TF_FLAME) or [FLAME photometric optimization](https://github.com/HavenFeng/photometric_optimization).
+
+#### Convert meshes
+
+Install mesh processing libraries from [MPI-IS/mesh](https://github.com/MPI-IS/mesh) within the virtual environment.
+Download FLAME from [here](https://flame.is.tue.mpg.de) and place it in the model folder.
+
+Running 
+```
+python mesh_convert.py
+```
+outputs a FLAME mesh for a specified BFM mesh. The demo supports meshes in 'BFM 2017', 'BFM 2009', or 'cropped BFM 2009' (i.e. as used by [3DDFA](http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/3DDFA/main.htm)) topology.
 
 #### Acknowledgement
 
