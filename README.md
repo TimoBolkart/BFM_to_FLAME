@@ -20,6 +20,7 @@ FLAME is a lightweight and expressive generic head model learned from over 33,00
 * [Photometric FLAME Fitting: FLAME image fitting using differentiable rendering](https://github.com/HavenFeng/photometric_optimization)
 * [FLAME_PyTorch: FLAME PyTorch layer](https://github.com/soubhiksanyal/FLAME_PyTorch)
 * [RingNet: FLAME meshes from single images](https://github.com/soubhiksanyal/RingNet)
+* [DECA: Detailed nimatable face reconstruction from single images](https://github.com/YadiraF/DECA)
 * [VOCA: Voice Operated Character Animation](https://github.com/TimoBolkart/voca)
 * [GIF: Generative Interpretable Faces](https://github.com/ParthaEth/GIF)
 
