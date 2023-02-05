@@ -14,15 +14,7 @@ This repository demonstrates
 
 ### About FLAME
 
-FLAME is a lightweight and expressive generic head model learned from over 33,000 of accurately aligned 3D scans. Public FLAME related repositories:
-* [TF_FLAME: Tensorflow FLAME framework](https://github.com/TimoBolkart/TF_FLAME)
-* [flame-fitting: Chumpy-based FLAME fitting](https://github.com/Rubikplayer/flame-fitting)
-* [Photometric FLAME Fitting: FLAME image fitting using differentiable rendering](https://github.com/HavenFeng/photometric_optimization)
-* [FLAME_PyTorch: FLAME PyTorch layer](https://github.com/soubhiksanyal/FLAME_PyTorch)
-* [RingNet: FLAME meshes from single images](https://github.com/soubhiksanyal/RingNet)
-* [DECA: Detailed nimatable face reconstruction from single images](https://github.com/YadiraF/DECA)
-* [VOCA: Voice Operated Character Animation](https://github.com/TimoBolkart/voca)
-* [GIF: Generative Interpretable Faces](https://github.com/ParthaEth/GIF)
+FLAME is a lightweight and expressive generic head model learned from over 33,000 of accurately aligned 3D scans. For a list of public FLAME resources (publications, code repositories, datasets), please visit the [:fire: FLAME-Universe :fire:](https://github.com/TimoBolkart/FLAME-Universe).
 
 ### Setup
 
