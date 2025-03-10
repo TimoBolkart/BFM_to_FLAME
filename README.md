@@ -42,10 +42,15 @@ pip install -U pip
 
 Install requirements
 ```
-pip install numpy==1.19.4
-pip install h5py==3.1.0
-pip install chumpy==0.70 
-pip install opencv-python==4.4.0.46
+chumpy==0.70
+h5py==3.13.0
+
+# Otherwise, error: https://stackoverflow.com/questions/74893742/how-to-solve-attributeerror-module-numpy-has-no-attribute-bool
+numpy==1.23.1
+
+opencv-python==4.11.0.86
+scipy==1.13.1
+six==1.17.0
 ```
 
 ### Create texture model
